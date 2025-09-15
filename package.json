@@ -15,9 +15,9 @@
   "author": "Moonshid",
   "license": "ISC",
   "devDependencies": {
-    "css-loader": "^6.8.1",
-    "style-loader": "^3.3.3",
-    "webpack": "^5.89.0",
+    "css-loader": "^6.11.0",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.101.3",
     "webpack-cli": "^5.1.4"
   }
 }
