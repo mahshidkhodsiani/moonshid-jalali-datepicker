@@ -1,0 +1,124 @@
+body {
+  font-family: "Tahoma", sans-serif;
+  background-color: #f4f7f9;
+  direction: rtl;
+  text-align: right;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#jalaliDatePicker {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* استایل های مربوط به خود تقویم */
+.datepicker-container {
+  display: none; /* به صورت پیش‌فرض مخفی است */
+  position: absolute;
+  z-index: 1000;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.datepicker-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  user-select: none;
+}
+
+.datepicker-header button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px 10px;
+  color: #555;
+}
+
+.datepicker-header button:hover {
+  color: #007bff;
+}
+
+.datepicker-header .month-year {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.datepicker-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.datepicker-table th,
+.datepicker-table td {
+  text-align: center;
+  padding: 10px 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.datepicker-table th {
+  color: #888;
+  font-weight: normal;
+}
+
+.datepicker-table td {
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.datepicker-table td:hover {
+  background-color: #e9f0f7;
+}
+
+.datepicker-table td.selected {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.datepicker-table td.disabled {
+  color: #ccc;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* اضافه کردن استایل برای روزهای جمعه */
+.datepicker-table td.friday {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+/* اصلاح استایل برای امروز */
+.datepicker-table td.today {
+  border-radius: 50%;
+  font-weight: bold;
+  background-color: #273527;
+  color: #fff; /* اضافه کردن رنگ سفید برای خوانایی */
+}
+
